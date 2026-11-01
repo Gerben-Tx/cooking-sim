@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://iqv80d1af3yn"]
+
+[ext_resource type="Script" uid="uid://csi77epfk8u0u" path="res://Recipe/Recipe.cs" id="1_2dxv4"]
+[ext_resource type="Resource" uid="uid://dsxvvv2jh5qlm" path="res://Recipe/Recipes/Groups/GroupAnd1.tres" id="1_s8600"]
+[ext_resource type="PackedScene" uid="uid://dsht38ewkvf8v" path="res://Objects/HotdogBun/hotdog_bun.tscn" id="2_blu2u"]
+[ext_resource type="Script" uid="uid://b84fd7wfekh6u" path="res://Recipe/Ingredient.cs" id="3_3gj56"]
+[ext_resource type="PackedScene" uid="uid://bt5c3duv3qp86" path="res://Objects/Sausage/sausage.tscn" id="4_yfq5j"]
+
+[sub_resource type="Resource" id="Resource_g2fkj"]
+script = ExtResource("3_3gj56")
+Scene = ExtResource("2_blu2u")
+Group = ExtResource("1_s8600")
+Position = 0
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[sub_resource type="Resource" id="Resource_uv87l"]
+script = ExtResource("3_3gj56")
+Scene = ExtResource("4_yfq5j")
+Group = ExtResource("1_s8600")
+Position = 2
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[resource]
+script = ExtResource("1_2dxv4")
+Ingredients = [SubResource("Resource_g2fkj"), SubResource("Resource_uv87l")]
+metadata/_custom_type_script = "uid://csi77epfk8u0u"

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dnnfbkc8ru70n"]
+
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="2_ghjjs"]
+[ext_resource type="PackedScene" uid="uid://cie6xkfyqq5hl" path="res://Features/CookableObjectFeature/cookableObjectFeature.tscn" id="2_yjeqw"]
+[ext_resource type="Material" uid="uid://bo71wis40pjab" path="res://Objects/TestCube/burned_material.tres" id="3_2i5x0"]
+[ext_resource type="Material" uid="uid://n48wylhiudlq" path="res://Objects/TestCube/cooked_material.tres" id="4_dit5i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2i5x0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_on5l8"]
+material = SubResource("StandardMaterial3D_2i5x0")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_on5l8"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[node name="TestCube" type="Node3D" unique_id=73521180]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=648653441]
+collision_layer = 4
+collision_mask = 15
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=114977872]
+mesh = SubResource("BoxMesh_on5l8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=944431952]
+shape = SubResource("ConvexPolygonShape3D_on5l8")
+
+[node name="Features" type="Node3D" parent="." unique_id=475361726]
+
+[node name="CookableObjectFeature" parent="Features" unique_id=1285800919 node_paths=PackedStringArray("Mesh") instance=ExtResource("2_yjeqw")]
+Mesh = NodePath("../../RigidBody3D/MeshInstance3D")
+CookedMaterial = ExtResource("4_dit5i")
+BurnedMaterial = ExtResource("3_2i5x0")
+
+[node name="PickableObjectFeature" parent="Features" unique_id=1321925139 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_ghjjs")]
+RigidBody = NodePath("../../RigidBody3D")

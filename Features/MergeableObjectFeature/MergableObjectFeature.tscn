@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d2buie5ltyc4d"]
+
+[ext_resource type="Script" uid="uid://ckgejsye3p6fx" path="res://Features/MergeableObjectFeature/MergeableObject.cs" id="1_mylif"]
+
+[node name="MergableObjectFeature" type="Node3D" unique_id=1513487580 node_paths=PackedStringArray("_mergeTargets")]
+script = ExtResource("1_mylif")
+_mergeTargets = []

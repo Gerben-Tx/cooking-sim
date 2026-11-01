@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://byu44qdsdpkoq"]
+
+[ext_resource type="PackedScene" uid="uid://crmjduaxqwfpg" path="res://Map/FoodTruck/food_truck.glb" id="1_5f2nw"]
+
+[node name="FoodTruck" type="Node3D" unique_id=12862950]
+
+[node name="food_truck" parent="." unique_id=1641931094 instance=ExtResource("1_5f2nw")]

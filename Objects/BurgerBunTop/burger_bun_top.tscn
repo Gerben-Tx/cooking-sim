@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dmelcq08alnx6"]
+
+[ext_resource type="ArrayMesh" uid="uid://dq5agseghq0w7" path="res://Objects/BurgerBunTop/burger_bun_top_Cylinder_002.res" id="1_4jac7"]
+[ext_resource type="Material" uid="uid://364jaahdsey7" path="res://Objects/BurgerBunTop/material.tres" id="2_msesx"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="3_rd5cl"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_msesx"]
+points = PackedVector3Array(-0.061943535, 0.0230736, -0.045059465, 0.093999445, -0.008806033, 0.017611094, 0.08963005, 0.0031086646, 0.023113975, -0.040818557, -0.02031974, 0.08457883, -0.005748418, -0.025613185, -0.083415136, 0.016731234, 0.05089383, -0.005577078, 0.04850076, 0.011793623, -0.07417238, -0.014112913, 0.028745407, 0.06775259, -0.09399483, -0.020558331, 0.0029258374, 0.048658904, -0.025423184, 0.06869282, -0.070242055, 0.023052275, 0.030895941, 0.077327736, -0.022583332, -0.048686504, 0.04849868, 0.011793684, 0.07416919, -0.034611776, 0.008903307, -0.08366471, -0.06868629, -0.02542708, -0.048654284, 0.08005172, 0.014639746, -0.031436738, -0.019544017, 0.048118763, -0.022343518, 0.036131453, 0.042397372, 0.027790746, 0.017611407, -0.008806425, 0.09400112, -0.068685584, -0.025426682, 0.04865378, -0.01672564, 0.048043035, 0.025071003, -0.06613279, 0.006042648, 0.06326764, -0.086953774, 0.0030827837, -0.031872153, 0.016766744, 0.039783366, -0.04753205, 0.0176269, -0.011763043, -0.09408381, 0.083411165, -0.025612123, 0.0057493863, -0.05256054, -0.017447751, -0.07885911, 0.06703238, -0.017378971, 0.06703238, -0.017442146, 0.005968176, 0.090087414, 0.067759484, 0.028743576, 0.014100342, -0.0028400333, 0.023133647, -0.07648564, -0.06450116, 0.031451445, -0.0027944646)
+
+[node name="burger_bun_top" type="RigidBody3D" unique_id=1176347335]
+collision_layer = 4
+collision_mask = 15
+collision_priority = 99.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1374639005]
+mesh = ExtResource("1_4jac7")
+surface_material_override/0 = ExtResource("2_msesx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=457002496]
+shape = SubResource("ConvexPolygonShape3D_msesx")
+
+[node name="Features" type="Node3D" parent="." unique_id=257131098]
+
+[node name="PickableObjectFeature" parent="Features" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("3_rd5cl")]
+RigidBody = NodePath("../..")

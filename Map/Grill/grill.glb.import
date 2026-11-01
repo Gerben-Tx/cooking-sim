@@ -1,0 +1,144 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c3whk4qvvjqse"
+path="res://.godot/imported/grill.glb-9d5169397b94729500d98783cf63e415.scn"
+
+[deps]
+
+source_file="res://Map/Grill/grill.glb"
+dest_files=["res://.godot/imported/grill.glb-9d5169397b94729500d98783cf63e415.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://dg3smpfuxyfob"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"meshes": {
+"grill_Cube": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube.res",
+"save_to_file/path": "uid://cq7hsf1b18ues"
+},
+"grill_Cube_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube_002.res",
+"save_to_file/path": "uid://by54j131qhdte"
+},
+"grill_Cube_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube_006.res",
+"save_to_file/path": "uid://bmyavp0vvjq02"
+},
+"grill_Cube_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube_007.res",
+"save_to_file/path": "uid://jwsafdfpegqf"
+},
+"grill_Cube_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube_009.res",
+"save_to_file/path": "uid://5hs4lccg3p2f"
+},
+"grill_Cube_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cube_010.res",
+"save_to_file/path": "uid://dxsogseqn3x60"
+},
+"grill_Cylinder_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_001.res",
+"save_to_file/path": "uid://cqfy2vylajuyu"
+},
+"grill_Cylinder_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_003.res",
+"save_to_file/path": "uid://d06pstx7xhwto"
+},
+"grill_Cylinder_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_012.res",
+"save_to_file/path": "uid://b3n5wn4b4tdxn"
+},
+"grill_Cylinder_013": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_013.res",
+"save_to_file/path": "uid://dvvjchwsskx70"
+},
+"grill_Cylinder_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_014.res",
+"save_to_file/path": "uid://d06ucr6npxfqa"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

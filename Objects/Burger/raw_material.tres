@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d18jup2i6cs4u"]
+
+[resource]
+resource_name = "hotdog_sausage_raw"
+albedo_color = Color(0.9662354, 0.4222191, 0.33694196, 1)

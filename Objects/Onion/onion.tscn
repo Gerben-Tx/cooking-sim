@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bg8jgufppheqa"]
+
+[ext_resource type="PackedScene" uid="uid://11dt5sfv76jf" path="res://Objects/Onion/onion.glb" id="2_082bj"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="2_ukfol"]
+[ext_resource type="PackedScene" uid="uid://xibvkc84nrwr" path="res://Features/CuttableObjectFeature/CuttableObjectFeature.tscn" id="3_jgwdw"]
+[ext_resource type="PackedScene" uid="uid://cfmio0w68incw" path="res://Objects/Onion/onion_cut.tscn" id="4_pyuxv"]
+
+[node name="onion" unique_id=923840266 instance=ExtResource("2_082bj")]
+
+[node name="onion-rigid" parent="." index="0" unique_id=624802253]
+collision_layer = 4
+
+[node name="Features" type="Node3D" parent="onion-rigid" index="2" unique_id=1275692167]
+
+[node name="PickableObjectFeature" parent="onion-rigid/Features" index="0" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_ukfol")]
+RigidBody = NodePath("../..")
+
+[node name="CuttableObjectFeature" parent="onion-rigid/Features" index="1" unique_id=289251932 node_paths=PackedStringArray("_rigidBody") instance=ExtResource("3_jgwdw")]
+_sceneReplacement = ExtResource("4_pyuxv")
+_rigidBody = NodePath("../..")

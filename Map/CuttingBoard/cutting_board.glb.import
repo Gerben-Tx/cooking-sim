@@ -1,0 +1,54 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bp047r1t1xi87"
+path="res://.godot/imported/cutting_board.glb-d7512f91ad62232acb850ce6d1e72c86.scn"
+
+[deps]
+
+source_file="res://Map/CuttingBoard/cutting_board.glb"
+dest_files=["res://.godot/imported/cutting_board.glb-d7512f91ad62232acb850ce6d1e72c86.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://dg3smpfuxyfob"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"meshes": {
+"cutting_board_Cube_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Map/CuttingBoard/cutting_board_Cube_016.res",
+"save_to_file/path": "uid://df451h46xscmh"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

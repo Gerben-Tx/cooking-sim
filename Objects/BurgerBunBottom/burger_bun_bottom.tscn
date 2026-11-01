@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://br4xktdk57tto"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxaxqfydwqgbq" path="res://Objects/BurgerBunBottom/burger_bun_bottom_Cylinder.res" id="1_o1mc5"]
+[ext_resource type="Material" uid="uid://b1qlh6dsc2uee" path="res://Objects/BurgerBunBottom/material.tres" id="2_6y8ux"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="3_mce3k"]
+[ext_resource type="PackedScene" uid="uid://bcvxcwsy1lv2l" path="res://Features/MergeableRecipeObjectFeature/MergeableRecipeObjectFeature.tscn" id="4_0w1ka"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1ip2k"]
+points = PackedVector3Array(-0.073464714, -0.018854197, -0.02261134, 0.093948945, 0.012562558, 0.017601633, 0.09080863, 0.021334339, 0.023417909, 0.002903218, 0.021355605, -0.093858466, -0.061730392, 0.023400629, 0.06454351, 0.06477937, -0.018777115, 0.042245116, 0.048039403, -0.016033426, -0.06786097, -0.0057445397, -0.013489981, 0.08622213, -0.07607919, 0.026303703, -0.030986069, 0.030986192, 0.026303792, 0.07607949, 0.0645637, 0.026216377, -0.050528876, -0.048952546, -0.010641727, -0.074881345, -0.08400531, -0.007832613, 0.034760192, 0.052271638, 0.0008541748, 0.07842566, 0.08693262, -0.010731626, -0.020262491, -0.093948945, 0.012562558, -0.017601633, -0.042245116, -0.018777115, 0.06477937, -0.017601633, 0.012562558, 0.093948945, 0.008469494, -0.018869516, -0.076349474, -0.055352625, 0.021241963, -0.075762995, 0.07872606, 0.01833672, -0.05249013, -0.05227149, 0.00085418305, 0.07842544, -0.0844333, 0.021230347, 0.04075713, 0.023218486, -0.002052028, -0.09003533, -0.019805487, 0.026399584, -0.079239674, -0.07841831, 0.0008544468, -0.052284937, 0.08400822, -0.00783051, 0.034753885, 0.07576552, 0.021242546, 0.05535447, 0.023417782, 0.021334244, 0.090808146, 0.07635161, -0.018870153, -0.008469732, 0.05247641, 0.018337986, -0.07873289, -0.01749102, -0.004992936, -0.09043424)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wm8b6"]
+height = 0.0064697266
+radius = 0.011230469
+
+[node name="burger_bun_bottom" type="RigidBody3D" unique_id=1176347335]
+collision_layer = 4
+collision_mask = 15
+collision_priority = 99.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1374639005]
+mesh = ExtResource("1_o1mc5")
+surface_material_override/0 = ExtResource("2_6y8ux")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=353920300]
+shape = SubResource("ConvexPolygonShape3D_1ip2k")
+
+[node name="MergeArea1" type="Area3D" parent="." unique_id=92952057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07710923, 0.031849056, 0)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MergeArea1" unique_id=1538549260]
+shape = SubResource("CylinderShape3D_wm8b6")
+
+[node name="MergeArea2" type="Area3D" parent="." unique_id=1374218519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0777275, 0.031682305, 0)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MergeArea2" unique_id=903462549]
+shape = SubResource("CylinderShape3D_wm8b6")
+
+[node name="MergeTarget" type="Marker3D" parent="." unique_id=1998747136]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.033006996, 0)
+
+[node name="Features" type="Node3D" parent="." unique_id=257131098]
+
+[node name="PickableObjectFeature" parent="Features" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("3_mce3k")]
+RigidBody = NodePath("../..")
+
+[node name="MergeableRecipeObjectFeature" parent="Features" unique_id=1513487580 node_paths=PackedStringArray("_mergeAreas", "_mergeTarget") instance=ExtResource("4_0w1ka")]
+_mergeAreas = [NodePath("../../MergeArea1"), NodePath("../../MergeArea2")]
+_mergeTarget = NodePath("../../MergeTarget")

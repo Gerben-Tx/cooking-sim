@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="IngredientGroup" format=3 uid="uid://2fsrj4plr26u"]
+
+[ext_resource type="Script" uid="uid://c2rh1eknkbeky" path="res://Recipe/IngredientGroup.cs" id="1_uyqxh"]
+
+[resource]
+script = ExtResource("1_uyqxh")
+Type = 2
+metadata/_custom_type_script = "uid://c2rh1eknkbeky"

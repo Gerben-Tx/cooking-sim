@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://vmm50x4stn64"]
+
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="1_4k4gb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g14j6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_on5l8"]
+material = SubResource("StandardMaterial3D_g14j6")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_on5l8"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[node name="TestCube" type="Node3D" unique_id=73521180]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=648653441]
+collision_layer = 4
+collision_mask = 15
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=114977872]
+mesh = SubResource("BoxMesh_on5l8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=944431952]
+shape = SubResource("ConvexPolygonShape3D_on5l8")
+
+[node name="Features" type="Node3D" parent="." unique_id=193315818]
+
+[node name="PickableObjectFeature" parent="Features" unique_id=1321925139 node_paths=PackedStringArray("RigidBody") instance=ExtResource("1_4k4gb")]
+RigidBody = NodePath("../../RigidBody3D")

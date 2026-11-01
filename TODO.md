@@ -1,0 +1,2 @@
+- A bread top should only merge with a bread bottom if the bread bottom is already merged with at least 1 ingredient (meat / lettuce)
+  See https://excali.development-hub.io/editor/5840aa05-b2f8-40e6-8c2d-51e681c193d9

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://essx48s7bsfk"]
+
+[ext_resource type="Script" uid="uid://wcj6y1e726vs" path="res://Cooker/Cooker.cs" id="1_6nx04"]
+[ext_resource type="PackedScene" uid="uid://c3whk4qvvjqse" path="res://Map/Grill/grill.glb" id="2_7tw0r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kpbju"]
+size = Vector3(0.4906845, 0.028446198, 0.93829346)
+
+[node name="Grill" type="Node3D" unique_id=465738913 node_paths=PackedStringArray("_cookingArea")]
+script = ExtResource("1_6nx04")
+_cookingArea = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=466955199]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040148348, 0.15732542, -0.013077654)
+collision_mask = 5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=698069552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.047275543, 0.1488285, 0.00021362305)
+shape = SubResource("BoxShape3D_kpbju")
+debug_color = Color(0.96, 0, 0.5439999, 1)
+
+[node name="grill" parent="." unique_id=1465730699 instance=ExtResource("2_7tw0r")]

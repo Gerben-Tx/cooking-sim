@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bcvxcwsy1lv2l"]
+
+[ext_resource type="Script" uid="uid://c5kkgusnovl8t" path="res://Features/MergeableRecipeObjectFeature/MergeableRecipeObject.cs" id="1_ijf8u"]
+
+[node name="MergeableRecipeObjectFeature" type="Node3D" unique_id=1513487580 node_paths=PackedStringArray("_mergeAreas")]
+script = ExtResource("1_ijf8u")
+_mergeAreas = []

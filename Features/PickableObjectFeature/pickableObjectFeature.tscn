@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d3j78hocg3fmy"]
+
+[ext_resource type="Script" uid="uid://btv5fj8eupxqy" path="res://Features/PickableObjectFeature/PickableObject.cs" id="1_qlf5x"]
+[ext_resource type="Texture2D" uid="uid://bybq3iutnlv18" path="res://Features/PickableObjectFeature/dropIndicator.png" id="2_x5g8e"]
+
+[node name="PickableObjectFeature" type="Node3D" unique_id=385778057]
+script = ExtResource("1_qlf5x")
+
+[node name="DropIndicatorSprite" type="Sprite3D" parent="." unique_id=1686242610]
+transform = Transform3D(0.05, 0, 0, 0, -2.1855695e-09, -0.001, 0, 0.05, -4.371139e-11, 0, 0, 0)
+texture = ExtResource("2_x5g8e")

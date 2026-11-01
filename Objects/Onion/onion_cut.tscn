@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cfmio0w68incw"]
+
+[ext_resource type="PackedScene" uid="uid://c2mqeq1qevx7" path="res://Objects/Onion/onion_cut.glb" id="1_8ki6j"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="2_m35q8"]
+
+[node name="onion_cut" unique_id=679356000 instance=ExtResource("1_8ki6j")]
+
+[node name="onion-cut-1-rigid" parent="." index="0" unique_id=272000274]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-1-rigid" index="2" unique_id=402627910]
+
+[node name="PickableObjectFeature" parent="onion-cut-1-rigid/Features" index="0" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")
+
+[node name="onion-cut-2-rigid" parent="." index="1" unique_id=1935828225]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-2-rigid" index="2" unique_id=2131000450]
+
+[node name="PickableObjectFeature" parent="onion-cut-2-rigid/Features" index="0" unique_id=1186483702 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")
+
+[node name="onion-cut-3-rigid" parent="." index="2" unique_id=1169456975]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-3-rigid" index="2" unique_id=1034352198]
+
+[node name="PickableObjectFeature" parent="onion-cut-3-rigid/Features" index="0" unique_id=1366829152 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")
+
+[node name="onion-cut-4-rigid" parent="." index="3" unique_id=779439677]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-4-rigid" index="2" unique_id=1375464686]
+
+[node name="PickableObjectFeature" parent="onion-cut-4-rigid/Features" index="0" unique_id=136938391 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")
+
+[node name="onion-cut-5-rigid" parent="." index="4" unique_id=93469207]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-5-rigid" index="2" unique_id=610100607]
+
+[node name="PickableObjectFeature" parent="onion-cut-5-rigid/Features" index="0" unique_id=1064828845 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")
+
+[node name="onion-cut-6-rigid" parent="." index="5" unique_id=1438140941]
+collision_layer = 5
+
+[node name="Features" type="Node3D" parent="onion-cut-6-rigid" index="2" unique_id=940403366]
+
+[node name="PickableObjectFeature" parent="onion-cut-6-rigid/Features" index="0" unique_id=1346403610 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_m35q8")]
+RigidBody = NodePath("../..")

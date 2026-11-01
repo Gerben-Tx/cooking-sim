@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="Recipe" format=3 uid="uid://dynu4ssl0cc5r"]
+
+[ext_resource type="Script" uid="uid://csi77epfk8u0u" path="res://Recipe/Recipe.cs" id="1_0n8vk"]
+[ext_resource type="PackedScene" uid="uid://br4xktdk57tto" path="res://Objects/BurgerBunBottom/burger_bun_bottom.tscn" id="1_1lfcg"]
+[ext_resource type="Resource" uid="uid://dsxvvv2jh5qlm" path="res://Recipe/Recipes/Groups/GroupAnd1.tres" id="1_63x7s"]
+[ext_resource type="Script" uid="uid://b84fd7wfekh6u" path="res://Recipe/Ingredient.cs" id="2_rx27t"]
+[ext_resource type="PackedScene" uid="uid://e3mtwlxpw5t0" path="res://Objects/Burger/burger.tscn" id="3_wkyml"]
+[ext_resource type="Resource" uid="uid://2fsrj4plr26u" path="res://Recipe/Recipes/Groups/GroupAndOr1.tres" id="4_7okiw"]
+[ext_resource type="PackedScene" uid="uid://txtudy6wn6bf" path="res://Objects/Lettuce/lettuce.tscn" id="4_63x7s"]
+[ext_resource type="PackedScene" uid="uid://dmelcq08alnx6" path="res://Objects/BurgerBunTop/burger_bun_top.tscn" id="7_gbnsb"]
+
+[sub_resource type="Resource" id="Resource_7okiw"]
+script = ExtResource("2_rx27t")
+Scene = ExtResource("1_1lfcg")
+Group = ExtResource("1_63x7s")
+Position = 0
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[sub_resource type="Resource" id="Resource_gbnsb"]
+script = ExtResource("2_rx27t")
+Scene = ExtResource("3_wkyml")
+Group = ExtResource("4_7okiw")
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[sub_resource type="Resource" id="Resource_gwf46"]
+script = ExtResource("2_rx27t")
+Scene = ExtResource("4_63x7s")
+Group = ExtResource("4_7okiw")
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[sub_resource type="Resource" id="Resource_l1jou"]
+script = ExtResource("2_rx27t")
+Scene = ExtResource("7_gbnsb")
+Group = ExtResource("1_63x7s")
+Position = 2
+metadata/_custom_type_script = "uid://b84fd7wfekh6u"
+
+[resource]
+script = ExtResource("1_0n8vk")
+Ingredients = [SubResource("Resource_7okiw"), SubResource("Resource_gbnsb"), SubResource("Resource_gwf46"), SubResource("Resource_l1jou")]
+metadata/_custom_type_script = "uid://csi77epfk8u0u"

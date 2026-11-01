@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d3l805tb2qwol"]
+
+[ext_resource type="PackedScene" uid="uid://bjax8psldfsjl" path="res://Map/Knife/knife.glb" id="1_r3lfh"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="2_8upj3"]
+
+[node name="knife" unique_id=1989130187 instance=ExtResource("1_r3lfh")]
+
+[node name="Cube_002-rigid" parent="." index="0" unique_id=1109108065 groups=["cutting_objects"]]
+collision_layer = 4
+collision_mask = 15
+
+[node name="Features" type="Node3D" parent="Cube_002-rigid" index="2" unique_id=472958430]
+
+[node name="PickableObjectFeature" parent="Cube_002-rigid/Features" index="0" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("2_8upj3")]
+RigidBody = NodePath("../..")
+LockAngularAxisWhileHeld = true

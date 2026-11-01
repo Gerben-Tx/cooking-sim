@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://e3mtwlxpw5t0"]
+
+[ext_resource type="ArrayMesh" uid="uid://bcgwnyeypkohj" path="res://Objects/Burger/burger_Cylinder_003.res" id="1_3oadk"]
+[ext_resource type="Material" uid="uid://d18jup2i6cs4u" path="res://Objects/Burger/raw_material.tres" id="2_yc41x"]
+[ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="3_k2ris"]
+[ext_resource type="PackedScene" uid="uid://cie6xkfyqq5hl" path="res://Features/CookableObjectFeature/cookableObjectFeature.tscn" id="6_hnc2s"]
+[ext_resource type="Material" uid="uid://cv5xyev26b24r" path="res://Objects/Burger/cooked_material.tres" id="7_p8maq"]
+[ext_resource type="Material" uid="uid://dpqwjnl8qeg6v" path="res://Objects/Burger/burned_material.tres" id="8_cj5xb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hnc2s"]
+points = PackedVector3Array(0.04582742, 0.009849048, 0.080189005, -0.017536893, 0.0041490216, -0.0936034, -0.087300956, 0.0041417326, 0.03783406, 0.09141426, -0.007973802, 0.021326175, 0.067033306, 0.016404763, -0.067033306, -0.07617854, 0.016404763, -0.030471418, -0.006090465, -0.011023808, 0.060942836, -0.079233326, -0.007973802, -0.05179759, 0.05179759, -0.007973802, -0.079233326, 0.067033306, 0.016404763, 0.067033306, -0.034764044, 0.0128278155, 0.084032774, -0.022439638, -0.0071246666, 0.084135465, -0.06399762, 0.016404763, -0.06399762, 0.08837857, 0.016404763, -0.030471418, 0.03731632, -0.004484203, 0.083246864, -0.07484783, -0.0045048906, 0.051816344, 0.08532379, -0.007973802, -0.039616663, 0.039616663, 0.016404763, -0.08532379, -0.089303, 0.012769044, 0.014402545, -0.021326175, -0.007973802, -0.09141426, 0.01458978, 0.0070638116, 0.09338922, -0.09375804, 0.0070810835, -0.017565867, 0.09141426, 0.016404763, 0.009126152, -0.089502454, -0.004526031, 0.017310802, -0.01218093, 0.016404763, 0.05485237, -0.0746605, 0.012736756, 0.051686656, 0.021326175, -0.007973802, -0.09141426, -0.037836768, 0.0041418364, 0.0873072, -0.037953444, 0.0070656976, -0.087576434, 0.07859066, 0.0012362242, 0.05239985, 0.094052754, 0.0070948848, -0.017621081, -0.017282614, 0.012775106, -0.08935671)
+
+[node name="burger" type="RigidBody3D" unique_id=1176347335]
+collision_layer = 4
+collision_mask = 15
+collision_priority = 99.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1374639005]
+mesh = ExtResource("1_3oadk")
+surface_material_override/0 = ExtResource("2_yc41x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=586482906]
+shape = SubResource("ConvexPolygonShape3D_hnc2s")
+
+[node name="Features" type="Node3D" parent="." unique_id=257131098]
+
+[node name="PickableObjectFeature" parent="Features" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("3_k2ris")]
+RigidBody = NodePath("../..")
+
+[node name="CookableObjectFeature" parent="Features" unique_id=2087558239 node_paths=PackedStringArray("Mesh") instance=ExtResource("6_hnc2s")]
+Mesh = NodePath("../../MeshInstance3D")
+CookedMaterial = ExtResource("7_p8maq")
+BurnedMaterial = ExtResource("8_cj5xb")

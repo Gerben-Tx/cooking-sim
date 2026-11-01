@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cie6xkfyqq5hl"]
+
+[ext_resource type="Script" uid="uid://xk57rsxxtdt0" path="res://Features/CookableObjectFeature/CookableObject.cs" id="1_g2ni8"]
+
+[node name="CookableObjectFeature" type="Node3D" unique_id=2087558239]
+script = ExtResource("1_g2ni8")

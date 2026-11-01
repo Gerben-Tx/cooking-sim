@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://xibvkc84nrwr"]
+
+[ext_resource type="Script" uid="uid://ybpjdjbkx5p6" path="res://Features/CuttableObjectFeature/CuttableObject.cs" id="1_wxmyb"]
+
+[node name="CuttableObjectFeature" type="Node3D" unique_id=289251932]
+script = ExtResource("1_wxmyb")
