@@ -547,7 +547,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.515852, 0, 0.2828865)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.515852, 0, 0.54390717)
 
 [node name="Onions" type="Node3D" parent="Map/FoodTruck" unique_id=204583164]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4670013, -3.7253475)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.0827065, 1.4670013, -4.0622616)
 
 [node name="onion" parent="Map/FoodTruck/Onions" unique_id=923840266 instance=ExtResource("15_uty7l")]
 
@@ -573,4 +573,4 @@ shape = SubResource("ConvexPolygonShape3D_b0q6j")
 transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -1.1332169, 1.3509415, -4.3047867)
 
 [node name="Knife" parent="Map/FoodTruck" unique_id=488797193 instance=ExtResource("16_a3se8")]
-transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -1.1874886, 1.5061711, -4.3677273)
+transform = Transform3D(-5.463924e-08, 0, 1.25, 1.25, -5.4639237e-08, 5.463924e-08, 5.4639237e-08, 1.25, 2.3883572e-15, -1.1642609, 1.5061711, -3.7619877)
