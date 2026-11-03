@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cnofmmmpbaw4a"]
+
+[ext_resource type="Texture2D" uid="uid://dhpl5r5fdr7j" path="res://Objects/Onion/onion_cut_onion-inside-cooked-baked.png" id="1_7qwp3"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_7qwp3")
+roughness = 0.5

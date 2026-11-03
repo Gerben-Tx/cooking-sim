@@ -37,7 +37,14 @@ public partial class CookableObject : Node, IFeature {
             UpdateConfigurationWarnings();
         }
     }
-    [Export] private CookedState CookedState { get => _cookedState; set => _cookedState = value; }
+    [Export] private int SurfaceMaterialIndex { get => _surfaceMaterialIndex; set => _surfaceMaterialIndex = value; }
+    [Export] private CookedState CookedState {
+        get => _cookedState;
+        set {
+            _cookedState = value;
+            UpdateMaterial();
+        }
+    }
     [Export] private float CookTime { get => _cookTime; set => _cookTime = value; }
     [Export] private float BurnTime { get => _burnTime; set => _burnTime = value; }
 
@@ -70,6 +77,7 @@ public partial class CookableObject : Node, IFeature {
     private float _burnTime = 5f; // Total burn time in seconds (after cooking)
     private CookedState _cookedState = CookedState.Uncooked;
     private bool _canCook = false;
+    private int _surfaceMaterialIndex = 0;
 
     public override void _EnterTree() {
         base._EnterTree();
@@ -116,10 +124,13 @@ public partial class CookableObject : Node, IFeature {
     private void UpdateMaterial() {
         switch (_cookedState) {
             case CookedState.Cooked:
-                _mesh.SetSurfaceOverrideMaterial(0, _cookedMaterial);
+                _mesh.SetSurfaceOverrideMaterial(_surfaceMaterialIndex, _cookedMaterial);
                 break;
             case CookedState.Burned:
-                _mesh.SetSurfaceOverrideMaterial(0, _burnedMaterial);
+                _mesh.SetSurfaceOverrideMaterial(_surfaceMaterialIndex, _burnedMaterial);
+                break;
+            case CookedState.Uncooked:
+                _mesh.SetSurfaceOverrideMaterial(_surfaceMaterialIndex, null);
                 break;
         }
     }

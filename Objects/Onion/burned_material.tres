@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dhohx8qqs8s6w"]
+
+[ext_resource type="Texture2D" uid="uid://djm7gypo6oxsf" path="res://Objects/Onion/onion_cut_onion-inside-burned-baked.png" id="1_hux1n"]
+
+[resource]
+albedo_texture = ExtResource("1_hux1n")
