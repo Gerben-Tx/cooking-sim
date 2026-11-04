@@ -44,7 +44,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube.res",
 "save_to_file/path": "uid://cq7hsf1b18ues"
 },
@@ -53,7 +53,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube_002.res",
 "save_to_file/path": "uid://by54j131qhdte"
 },
@@ -62,7 +62,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube_006.res",
 "save_to_file/path": "uid://bmyavp0vvjq02"
 },
@@ -71,7 +71,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube_007.res",
 "save_to_file/path": "uid://jwsafdfpegqf"
 },
@@ -80,7 +80,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube_009.res",
 "save_to_file/path": "uid://5hs4lccg3p2f"
 },
@@ -89,7 +89,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cube_010.res",
 "save_to_file/path": "uid://dxsogseqn3x60"
 },
@@ -98,7 +98,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_001.res",
 "save_to_file/path": "uid://cqfy2vylajuyu"
 },
@@ -107,7 +107,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_003.res",
 "save_to_file/path": "uid://d06pstx7xhwto"
 },
@@ -116,7 +116,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_012.res",
 "save_to_file/path": "uid://b3n5wn4b4tdxn"
 },
@@ -125,7 +125,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_013.res",
 "save_to_file/path": "uid://dvvjchwsskx70"
 },
@@ -134,7 +134,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/Grill/grill_Cylinder_014.res",
 "save_to_file/path": "uid://d06ucr6npxfqa"
 }

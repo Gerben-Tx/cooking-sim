@@ -44,7 +44,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_001.res",
 "save_to_file/path": "uid://c4yjesajykx2j"
 },
@@ -53,7 +53,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_002.res",
 "save_to_file/path": "uid://dgwp324brkk4x"
 },
@@ -62,7 +62,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_003.res",
 "save_to_file/path": "uid://bckulfpwvfjx5"
 },
@@ -71,7 +71,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_004.res",
 "save_to_file/path": "uid://dnvdxf00m3qxc"
 },
@@ -80,7 +80,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_005.res",
 "save_to_file/path": "uid://drircte2hd0tn"
 },
@@ -89,7 +89,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/Onion/onion_cut_Sphere_006.res",
 "save_to_file/path": "uid://c5vtcw3ky83jt"
 }

@@ -17,7 +17,7 @@ nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
-nodes/root_scale=2.0
+nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
 nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
@@ -44,7 +44,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cube_001.res",
 "save_to_file/path": "uid://ckutibc60j8kt"
 },
@@ -53,7 +53,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cube_003.res",
 "save_to_file/path": "uid://7nek6hqfo46f"
 },
@@ -62,9 +62,36 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cylinder_004.res",
 "save_to_file/path": "uid://bo04hhs4s2yia"
+},
+"food_truck_Cylinder_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": false,
+"save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cylinder_006.res",
+"save_to_file/path": "uid://cuod4ggiariyd"
+},
+"food_truck_Cylinder_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": false,
+"save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cylinder_007.res",
+"save_to_file/path": "uid://cdgqwml07fqt"
+},
+"food_truck_Cylinder_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": false,
+"save_to_file/fallback_path": "res://Map/FoodTruck/food_truck_Cylinder_008.res",
+"save_to_file/path": "uid://b5n2s0gax0std"
 }
 }
 }

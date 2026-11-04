@@ -3,17 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://dipfemhv2rbso" path="res://PlayerCharacter/player_character_scene.tscn" id="1_ppyta"]
 [ext_resource type="Material" uid="uid://cw3w2rxysrrsl" path="res://Map/Materials/floor_struture_material.tres" id="2_ykrsh"]
 [ext_resource type="Material" uid="uid://cmlreoo2qwhp4" path="res://Map/Materials/not_floor_structure_material.tres" id="3_g14j6"]
-[ext_resource type="PackedScene" uid="uid://vmm50x4stn64" path="res://Objects/TestCube/test_cube.tscn" id="5_g14j6"]
-[ext_resource type="PackedScene" uid="uid://dnxakgs7nfcsj" path="res://Cooker/cooker_scene.tscn" id="5_ykrsh"]
-[ext_resource type="PackedScene" uid="uid://dnnfbkc8ru70n" path="res://Objects/TestCube/cookable_test_cube.tscn" id="6_g14j6"]
 [ext_resource type="PackedScene" uid="uid://bt5c3duv3qp86" path="res://Objects/Sausage/sausage.tscn" id="7_vbegm"]
 [ext_resource type="PackedScene" uid="uid://dsht38ewkvf8v" path="res://Objects/HotdogBun/hotdog_bun.tscn" id="8_ehkex"]
 [ext_resource type="PackedScene" uid="uid://dmelcq08alnx6" path="res://Objects/BurgerBunTop/burger_bun_top.tscn" id="9_xersf"]
 [ext_resource type="PackedScene" uid="uid://br4xktdk57tto" path="res://Objects/BurgerBunBottom/burger_bun_bottom.tscn" id="10_00tp4"]
-[ext_resource type="PackedScene" uid="uid://e3mtwlxpw5t0" path="res://Objects/Burger/burger.tscn" id="11_77dp3"]
 [ext_resource type="PackedScene" uid="uid://txtudy6wn6bf" path="res://Objects/Lettuce/lettuce.tscn" id="12_5tkv4"]
 [ext_resource type="PackedScene" uid="uid://byu44qdsdpkoq" path="res://Map/FoodTruck/food_truck.tscn" id="13_0m0f1"]
 [ext_resource type="PackedScene" uid="uid://essx48s7bsfk" path="res://Map/Grill/grill.tscn" id="14_b0q6j"]
+[ext_resource type="PackedScene" uid="uid://ch3mjcnrromvs" path="res://Objects/Burger/burger.tscn" id="15_45l4g"]
 [ext_resource type="PackedScene" uid="uid://bp8dbnbe4coaf" path="res://Map/CuttingBoard/cutting_board.tscn" id="15_mhym6"]
 [ext_resource type="PackedScene" uid="uid://bg8jgufppheqa" path="res://Objects/Onion/onion.tscn" id="15_uty7l"]
 [ext_resource type="PackedScene" uid="uid://d3l805tb2qwol" path="res://Map/Knife/knife.tscn" id="16_a3se8"]
@@ -30,11 +27,6 @@ background_mode = 2
 sky = SubResource("Sky_43bpn")
 tonemap_mode = 2
 glow_enabled = true
-
-[sub_resource type="BoxMesh" id="BoxMesh_ehkex"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xersf"]
-points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mhym6"]
 
@@ -181,211 +173,18 @@ radial_segments = 32
 rings = 12
 material = ExtResource("3_g14j6")
 
-[node name="InteractableObjects" type="Node" parent="Map" unique_id=1437602540]
-
-[node name="Cooker" parent="Map/InteractableObjects" unique_id=165972809 instance=ExtResource("5_ykrsh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.810997, 1.2368624, -12.642589)
-
-[node name="TestCube" parent="Map" unique_id=173662187 instance=ExtResource("5_g14j6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.853903, 12.498833, -6.4136634)
-
-[node name="TestCube2" parent="Map" unique_id=1123386078 instance=ExtResource("5_g14j6")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 22.58143, 12.550523, -6.2277207)
-
-[node name="CookableTestCube" parent="Map" unique_id=73521180 instance=ExtResource("6_g14j6")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 20.605534, 12.550523, -6.2277207)
-
-[node name="Sausages" type="Node3D" parent="Map" unique_id=1656865026]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33183873, 0)
-
-[node name="Sausage" parent="Map/Sausages" unique_id=1198604727 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.969196, 1.0145059, -11.228736)
-
-[node name="Sausage2" parent="Map/Sausages" unique_id=1044658983 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.985863, 1.014506, -11.386838)
-
-[node name="Sausage3" parent="Map/Sausages" unique_id=584026192 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.985863, 1.014506, -11.541489)
-
-[node name="Sausage4" parent="Map/Sausages" unique_id=1216549170 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.985863, 1.014506, -11.700664)
-
-[node name="Sausage5" parent="Map/Sausages" unique_id=834578904 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.985863, 1.014506, -11.867614)
-
-[node name="Sausage6" parent="Map/Sausages" unique_id=649355781 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.399406, 1.014506, -11.2343445)
-
-[node name="Sausage7" parent="Map/Sausages" unique_id=1582486127 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.399406, 1.014506, -11.386838)
-
-[node name="Sausage8" parent="Map/Sausages" unique_id=158969746 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.399406, 1.014506, -11.541489)
-
-[node name="Sausage9" parent="Map/Sausages" unique_id=1976259072 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.399406, 1.014506, -11.700664)
-
-[node name="Sausage10" parent="Map/Sausages" unique_id=132064668 instance=ExtResource("7_vbegm")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.399406, 1.014506, -11.867614)
-
-[node name="Buns" type="Node3D" parent="Map" unique_id=426070052]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8728, 1.0700158, -11.483585)
-
-[node name="HotdogBun" parent="Map/Buns" unique_id=41523150 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37784955, 0.29056633, 0.29789162)
-
-[node name="HotdogBun2" parent="Map/Buns" unique_id=1693490848 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37784955, 0.29056633, -0.03540136)
-
-[node name="HotdogBun3" parent="Map/Buns" unique_id=1249522727 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37784955, 0.29056633, -0.33205414)
-
-[node name="HotdogBun4" parent="Map/Buns" unique_id=1331575720 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17538449, 0.29056633, 0.29789162)
-
-[node name="HotdogBun5" parent="Map/Buns" unique_id=2099059246 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17538449, 0.29056633, -0.03540136)
-
-[node name="HotdogBun6" parent="Map/Buns" unique_id=1419033166 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17538449, 0.29056633, -0.33205414)
-
-[node name="HotdogBun7" parent="Map/Buns" unique_id=920394759 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283871, 0.29056633, 0.29789162)
-
-[node name="HotdogBun8" parent="Map/Buns" unique_id=1114646270 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283871, 0.29056633, -0.03540136)
-
-[node name="HotdogBun9" parent="Map/Buns" unique_id=2018339468 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0283871, 0.29056633, -0.33205414)
-
-[node name="HotdogBun10" parent="Map/Buns" unique_id=649142793 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2026501, 0.29056633, 0.29789162)
-
-[node name="HotdogBun11" parent="Map/Buns" unique_id=1764984909 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2026501, 0.29056633, -0.03540136)
-
-[node name="HotdogBun12" parent="Map/Buns" unique_id=249050834 instance=ExtResource("8_ehkex")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2026501, 0.29056633, -0.33205414)
-
-[node name="BurgerBuns" type="Node3D" parent="Map" unique_id=1254121976]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.157585, 1.4118494, -11.277429)
-
-[node name="burger_bun_top" parent="Map/BurgerBuns" unique_id=1176347335 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014867783, 0, 0)
-
-[node name="burger_bun_top2" parent="Map/BurgerBuns" unique_id=2000692435 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2085228, 0, 0)
-
-[node name="burger_bun_top3" parent="Map/BurgerBuns" unique_id=215722884 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44423103, 0, 0)
-
-[node name="burger_bun_top4" parent="Map/BurgerBuns" unique_id=828155299 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44423103, 0, -0.25271988)
-
-[node name="burger_bun_top5" parent="Map/BurgerBuns" unique_id=1301929049 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20561028, 0, -0.25271988)
-
-[node name="burger_bun_top6" parent="Map/BurgerBuns" unique_id=1109449313 instance=ExtResource("9_xersf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02863121, 0, -0.25271988)
-
-[node name="burger_bun_top7" parent="Map/BurgerBuns" unique_id=1697180983 instance=ExtResource("10_00tp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.027175903, -0.08455527, -0.52265835)
-
-[node name="burger_bun_top8" parent="Map/BurgerBuns" unique_id=1105444032 instance=ExtResource("10_00tp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2074337, -0.08455527, -0.52265835)
-
-[node name="burger_bun_top9" parent="Map/BurgerBuns" unique_id=512080878 instance=ExtResource("10_00tp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44659996, -0.08455527, -0.52265835)
-
-[node name="Burgers" type="Node3D" parent="Map" unique_id=1509838568]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.998016, 0, -11.169827)
-
-[node name="burger" parent="Map/Burgers" unique_id=721974216 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.368841, 0)
-
-[node name="burger2" parent="Map/Burgers" unique_id=1413723372 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22266388, 1.368841, 0)
-
-[node name="burger3" parent="Map/Burgers" unique_id=1630308303 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4680481, 1.368841, 0)
-
-[node name="burger4" parent="Map/Burgers" unique_id=1609863018 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4680481, 1.368841, -0.262393)
-
-[node name="burger5" parent="Map/Burgers" unique_id=1399172503 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22987175, 1.368841, -0.262393)
-
-[node name="burger6" parent="Map/Burgers" unique_id=697819159 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.033641815, 1.368841, -0.262393)
-
-[node name="Lettuces" type="Node3D" parent="Map" unique_id=1187471099]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.00906, 1.3893788, -11.729082)
-
-[node name="lettuce" parent="Map/Lettuces" unique_id=1458268012 instance=ExtResource("12_5tkv4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.030714035)
-
-[node name="lettuce2" parent="Map/Lettuces" unique_id=1831475578 instance=ExtResource("12_5tkv4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28803825, 0, 0.030714035)
-
-[node name="lettuce3" parent="Map/Lettuces" unique_id=1974543607 instance=ExtResource("12_5tkv4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5760765, 0, 0.030714035)
-
-[node name="Table" type="Node3D" parent="Map" unique_id=450730166]
-transform = Transform3D(1, 0, 0, 0, 0.47635418, 0, 0, 0, 1, 20.146236, 1.0700158, -11.483585)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Table" unique_id=1264016630]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Table/StaticBody3D" unique_id=2059019920]
-mesh = SubResource("BoxMesh_ehkex")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Table/StaticBody3D" unique_id=1581001012]
-shape = SubResource("ConvexPolygonShape3D_xersf")
-
-[node name="Table2" type="Node3D" parent="Map" unique_id=1741011495]
-transform = Transform3D(1, 0, 0, 0, 0.47635418, 0, 0, 0, 1, 19.015654, 1.0700158, -11.483585)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Table2" unique_id=1562958580]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Table2/StaticBody3D" unique_id=1900803966]
-mesh = SubResource("BoxMesh_ehkex")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Table2/StaticBody3D" unique_id=561156287]
-shape = SubResource("ConvexPolygonShape3D_xersf")
-
-[node name="Table3" type="Node3D" parent="Map" unique_id=1840705674]
-transform = Transform3D(1, 0, 0, 0, 0.47635418, 0, 0, 0, 1, 17.85512, 1.0700158, -11.483585)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Table3" unique_id=992645555]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Table3/StaticBody3D" unique_id=1645628489]
-mesh = SubResource("BoxMesh_ehkex")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Table3/StaticBody3D" unique_id=2012286029]
-shape = SubResource("ConvexPolygonShape3D_xersf")
-
-[node name="Table4" type="Node3D" parent="Map" unique_id=2021511059]
-transform = Transform3D(1, 0, 0, 0, 0.47635418, 0, 0, 0, 1, 16.648705, 1.0700158, -11.483585)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Table4" unique_id=2139654368]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map/Table4/StaticBody3D" unique_id=193390407]
-mesh = SubResource("BoxMesh_ehkex")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Table4/StaticBody3D" unique_id=1116157108]
-shape = SubResource("ConvexPolygonShape3D_xersf")
-
 [node name="FoodTruck" parent="Map" unique_id=12862950 instance=ExtResource("13_0m0f1")]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 30.430244, 0.960629, -19.070196)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 30.430244, 1.4948297, -19.070196)
 
 [node name="Grill" parent="Map/FoodTruck" unique_id=465738913 instance=ExtResource("14_b0q6j")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -1.1679192, 1.1829462, 1.8211422)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.883667, 0.59648025, 1.8211422)
 
 [node name="Box" type="MeshInstance3D" parent="Map/FoodTruck" unique_id=1159622102]
-transform = Transform3D(1, 0, 0, 0, 1.0586603, 0, 0, 0, 1.7375706, -1.1360207, 0.65932703, 1.8345318)
+transform = Transform3D(1, 0, 0, 0, 1.0586603, 0, 0, 0, 1.7375706, -0.8517685, 0.072861195, 1.8345318)
 mesh = SubResource("BoxMesh_mhym6")
 
 [node name="Box2" type="MeshInstance3D" parent="Map/FoodTruck" unique_id=1115403226]
-transform = Transform3D(1, 0, 0, 0, 0.10260672, 0, 0, 0, 4.2266665, -1.1830826, 1.2996378, -1.1745472)
+transform = Transform3D(1, 0, 0, 0, 0.10260672, 0, 0, 0, 4.2266665, -0.8988304, 0.71317184, -1.1745472)
 mesh = SubResource("BoxMesh_mhym6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/FoodTruck/Box2" unique_id=1710683997]
@@ -394,7 +193,7 @@ mesh = SubResource("BoxMesh_mhym6")
 shape = SubResource("ConvexPolygonShape3D_b0q6j")
 
 [node name="Sausages" type="Node3D" parent="Map/FoodTruck" unique_id=1482431374]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4369745, 0.7670002)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8505086, 0.7670002)
 
 [node name="Sausage" parent="Map/FoodTruck/Sausages" unique_id=753995899 instance=ExtResource("7_vbegm")]
 
@@ -420,36 +219,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19880295, 0, 0.3976059)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29368973, 0, 0.3976059)
 
 [node name="Burgers" type="Node3D" parent="Map/FoodTruck" unique_id=1811845875]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4369745, 0.2657299)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8505086, 0.2657299)
 
-[node name="burger" parent="Map/FoodTruck/Burgers" unique_id=26240024 instance=ExtResource("11_77dp3")]
+[node name="burger2" parent="Map/FoodTruck/Burgers" unique_id=732499345 instance=ExtResource("15_45l4g")]
 
-[node name="burger2" parent="Map/FoodTruck/Burgers" unique_id=714232038 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25085068)
+[node name="burger3" parent="Map/FoodTruck/Burgers" unique_id=1063159550 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.24799728)
 
-[node name="burger3" parent="Map/FoodTruck/Burgers" unique_id=1623936419 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4951744)
+[node name="burger4" parent="Map/FoodTruck/Burgers" unique_id=349323306 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4738388)
 
-[node name="burger4" parent="Map/FoodTruck/Burgers" unique_id=1147226548 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24000168, 0, 0)
+[node name="burger5" parent="Map/FoodTruck/Burgers" unique_id=663143807 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23839378, 0, 0)
 
-[node name="burger5" parent="Map/FoodTruck/Burgers" unique_id=2142840204 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24000168, 0, 0.25085068)
+[node name="burger6" parent="Map/FoodTruck/Burgers" unique_id=2044201777 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23839378, 0, 0.24799728)
 
-[node name="burger6" parent="Map/FoodTruck/Burgers" unique_id=2138143786 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24000168, 0, 0.4951744)
+[node name="burger7" parent="Map/FoodTruck/Burgers" unique_id=1986611595 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23839378, 0, 0.473835)
 
-[node name="burger7" parent="Map/FoodTruck/Burgers" unique_id=1124649511 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4640026, 0, 0)
+[node name="burger8" parent="Map/FoodTruck/Burgers" unique_id=136463105 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47253227, 0, 0)
 
-[node name="burger8" parent="Map/FoodTruck/Burgers" unique_id=1188827936 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4640026, 0, 0.25085068)
+[node name="burger9" parent="Map/FoodTruck/Burgers" unique_id=1989963587 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47253227, 0, 0.24799728)
 
-[node name="burger9" parent="Map/FoodTruck/Burgers" unique_id=255436540 instance=ExtResource("11_77dp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4640026, 0, 0.4951744)
+[node name="burger10" parent="Map/FoodTruck/Burgers" unique_id=16449596 instance=ExtResource("15_45l4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47253227, 0, 0.473835)
 
 [node name="Buns" type="Node3D" parent="Map/FoodTruck" unique_id=1562666255]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4369745, -0.41835785)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8505086, -0.41835785)
 
 [node name="hotdog_bun" parent="Map/FoodTruck/Buns" unique_id=1553233670 instance=ExtResource("8_ehkex")]
 
@@ -469,7 +268,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30094528, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30094528, 0, 0.37527847)
 
 [node name="Lettuce" type="Node3D" parent="Map/FoodTruck" unique_id=1438707452]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4670012, -0.960907)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8805355, -0.960907)
 
 [node name="lettuce" parent="Map/FoodTruck/Lettuce" unique_id=140898888 instance=ExtResource("12_5tkv4")]
 
@@ -489,7 +288,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28323174, 0, 0.26275635)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28323174, 0, 0.5335007)
 
 [node name="BurgerBunBot" type="Node3D" parent="Map/FoodTruck" unique_id=1437301649]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4670014, -1.5544643)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8805355, -1.5544643)
 
 [node name="burger_bun_bottom" parent="Map/FoodTruck/BurgerBunBot" unique_id=2133601264 instance=ExtResource("10_00tp4")]
 
@@ -518,7 +317,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4956379, 0, 0.28287506)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4956379, 0, 0.55057144)
 
 [node name="BurgerBunTop" type="Node3D" parent="Map/FoodTruck" unique_id=1706291938]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.341095, 1.4670014, -2.3289871)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.0568428, 0.8805355, -2.3289871)
 
 [node name="burger_bun_top" parent="Map/FoodTruck/BurgerBunTop" unique_id=2053254742 instance=ExtResource("9_xersf")]
 
@@ -547,21 +346,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.515852, 0, 0.2828865)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.515852, 0, 0.54390717)
 
 [node name="Onions" type="Node3D" parent="Map/FoodTruck" unique_id=204583164]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.0827065, 1.4670013, -4.0622616)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.79845047, 0.8805355, -4.0622616)
 
 [node name="onion" parent="Map/FoodTruck/Onions" unique_id=923840266 instance=ExtResource("15_uty7l")]
 
-[node name="onion2" parent="Map/FoodTruck/Onions" unique_id=550583121 instance=ExtResource("15_uty7l")]
+[node name="onion2" parent="Map/FoodTruck/Onions" unique_id=1921579503 instance=ExtResource("15_uty7l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.18671036)
 
-[node name="onion3" parent="Map/FoodTruck/Onions" unique_id=1252144609 instance=ExtResource("15_uty7l")]
+[node name="onion3" parent="Map/FoodTruck/Onions" unique_id=683045067 instance=ExtResource("15_uty7l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.3705063)
 
-[node name="onion4" parent="Map/FoodTruck/Onions" unique_id=706751588 instance=ExtResource("15_uty7l")]
+[node name="onion4" parent="Map/FoodTruck/Onions" unique_id=1122313078 instance=ExtResource("15_uty7l")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.54787064)
 
 [node name="Box3" type="MeshInstance3D" parent="Map/FoodTruck" unique_id=178819378]
-transform = Transform3D(1, 0, 0, 0, 0.10260672, 0, 0, 0, 1.3987373, -1.1830826, 1.2996382, -4.319029)
+transform = Transform3D(1, 0, 0, 0, 0.10260672, 0, 0, 0, 1.3987373, -0.8988304, 0.7131723, -4.319029)
 mesh = SubResource("BoxMesh_mhym6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/FoodTruck/Box3" unique_id=154665842]
@@ -569,8 +368,8 @@ mesh = SubResource("BoxMesh_mhym6")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/FoodTruck/Box3/StaticBody3D" unique_id=1522914957]
 shape = SubResource("ConvexPolygonShape3D_b0q6j")
 
-[node name="CuttingBoard" parent="Map/FoodTruck" unique_id=1365470723 instance=ExtResource("15_mhym6")]
-transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -1.1332169, 1.3509415, -4.3047867)
+[node name="CuttingBoard" parent="Map/FoodTruck" unique_id=966977340 instance=ExtResource("15_mhym6")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -0.8489647, 0.7644757, -4.304785)
 
-[node name="Knife" parent="Map/FoodTruck" unique_id=488797193 instance=ExtResource("16_a3se8")]
-transform = Transform3D(-5.463924e-08, 0, 1.25, 1.25, -5.4639237e-08, 5.463924e-08, 5.4639237e-08, 1.25, 2.3883572e-15, -1.1642609, 1.5061711, -3.7619877)
+[node name="Knife" parent="Map/FoodTruck" unique_id=1989130187 instance=ExtResource("16_a3se8")]
+transform = Transform3D(-5.463924e-08, 0, 1.25, 1.25, -5.463924e-08, 5.463924e-08, 5.463924e-08, 1.25, 2.3883574e-15, -0.8800049, 0.9197053, -3.7619877)

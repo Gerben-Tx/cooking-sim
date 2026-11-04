@@ -33,7 +33,7 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
-import_script/path=""
+import_script/path="uid://dg3smpfuxyfob"
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
@@ -44,7 +44,7 @@ _subresources={
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/fallback_path": "res://Objects/HotdogBun/hotdog_bun_Cube_002.res",
 "save_to_file/path": "uid://keq23aibo5b0"
 }

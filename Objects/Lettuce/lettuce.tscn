@@ -1,33 +1,14 @@
 [gd_scene format=3 uid="uid://txtudy6wn6bf"]
 
-[ext_resource type="ArrayMesh" uid="uid://dktvmf1miq5q7" path="res://Objects/Lettuce/lettuce_Cube.res" id="1_8dopw"]
-[ext_resource type="Material" uid="uid://bm80wixrniu1t" path="res://Objects/Lettuce/material.tres" id="2_33o7r"]
+[ext_resource type="PackedScene" uid="uid://ddhrifbm6lsw8" path="res://Objects/Lettuce/lettuce.glb" id="1_pt838"]
 [ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="3_wlag3"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_8dopw"]
-size = Vector3(0.24142142, 0.03782307, 0.21795902)
+[node name="lettuce" unique_id=882500853 instance=ExtResource("1_pt838")]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_33o7r"]
-size = Vector3(0.2510292, 0.0091224145, 0.22807375)
+[node name="lettuce-rigid" parent="." index="0" unique_id=186739939]
+collision_layer = 5
 
-[node name="lettuce" type="RigidBody3D" unique_id=1176347335]
-collision_layer = 4
-collision_mask = 15
-collision_priority = 99.0
+[node name="Features" type="Node3D" parent="lettuce-rigid" index="2" unique_id=151290557]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1374639005]
-mesh = ExtResource("1_8dopw")
-surface_material_override/0 = ExtResource("2_33o7r")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=968812204]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024359152, 0.019286852, -0.00093928725)
-shape = SubResource("BoxShape3D_8dopw")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=78962546]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024622343, 0.019817116, -0.0006719455)
-shape = SubResource("BoxShape3D_33o7r")
-
-[node name="Features" type="Node3D" parent="." unique_id=257131098]
-
-[node name="PickableObjectFeature" parent="Features" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("3_wlag3")]
+[node name="PickableObjectFeature" parent="lettuce-rigid/Features" index="0" unique_id=385778057 node_paths=PackedStringArray("RigidBody") instance=ExtResource("3_wlag3")]
 RigidBody = NodePath("../..")

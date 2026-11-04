@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://br4xktdk57tto" path="res://Objects/BurgerBunBottom/burger_bun_bottom.tscn" id="1_1lfcg"]
 [ext_resource type="Resource" uid="uid://dsxvvv2jh5qlm" path="res://Recipe/Recipes/Groups/GroupAnd1.tres" id="1_63x7s"]
 [ext_resource type="Script" uid="uid://b84fd7wfekh6u" path="res://Recipe/Ingredient.cs" id="2_rx27t"]
-[ext_resource type="PackedScene" uid="uid://e3mtwlxpw5t0" path="res://Objects/Burger/burger.tscn" id="3_wkyml"]
+[ext_resource type="PackedScene" uid="uid://e3mtwlxpw5t0" path="res://Objects/Burger/burger_old.tscn" id="3_wkyml"]
 [ext_resource type="Resource" uid="uid://2fsrj4plr26u" path="res://Recipe/Recipes/Groups/GroupAndOr1.tres" id="4_7okiw"]
 [ext_resource type="PackedScene" uid="uid://txtudy6wn6bf" path="res://Objects/Lettuce/lettuce.tscn" id="4_63x7s"]
 [ext_resource type="PackedScene" uid="uid://dmelcq08alnx6" path="res://Objects/BurgerBunTop/burger_bun_top.tscn" id="7_gbnsb"]
