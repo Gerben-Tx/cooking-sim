@@ -3,7 +3,7 @@ using Godot;
 namespace CookingSim.ImportScripts;
 
 [Tool]
-public partial class SetCollisionLayers : EditorScenePostImport
+public partial class GlbPostImport : EditorScenePostImport
 {
     public override Node _PostImport(
         Node node

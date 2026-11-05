@@ -23,6 +23,10 @@ RecipeManager="*uid://duokqw7ab46iv"
 
 project/assembly_name="Cooking Sim"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GlbImportPipeline/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
