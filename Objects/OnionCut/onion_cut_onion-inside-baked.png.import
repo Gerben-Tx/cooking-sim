@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gohinxa72yqa"
-path.s3tc="res://.godot/imported/onion_cut_onion-inside-baked.png-e9bd0bb9bfd283cdb5618f7c2faf78a7.s3tc.ctex"
+path.s3tc="res://.godot/imported/onion_cut_onion-inside-baked.png-bc04c92a0a219ea3efc121af292e00b6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Objects/Onion/onion_cut_onion-inside-baked.png"
-dest_files=["res://.godot/imported/onion_cut_onion-inside-baked.png-e9bd0bb9bfd283cdb5618f7c2faf78a7.s3tc.ctex"]
+source_file="res://Objects/OnionCut/onion_cut_onion-inside-baked.png"
+dest_files=["res://.godot/imported/onion_cut_onion-inside-baked.png-bc04c92a0a219ea3efc121af292e00b6.s3tc.ctex"]
 
 [params]
 

@@ -6,9 +6,9 @@
 [ext_resource type="Material" uid="uid://cv5xyev26b24r" path="res://Objects/Burger/cooked_material.tres" id="7_p8maq"]
 [ext_resource type="Material" uid="uid://dpqwjnl8qeg6v" path="res://Objects/Burger/burned_material.tres" id="8_cj5xb"]
 
-[node name="burger" unique_id=732499345 instance=ExtResource("1_3oadk")]
+[node name="burger" unique_id=1720380136 instance=ExtResource("1_3oadk")]
 
-[node name="burger-rigid" parent="." index="0" unique_id=703193447]
+[node name="burger-rigid" parent="." index="0" unique_id=1635749797]
 collision_layer = 5
 
 [node name="Features" type="Node3D" parent="burger-rigid" index="2" unique_id=1769202163]

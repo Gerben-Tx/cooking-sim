@@ -33,11 +33,28 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
-import_script/path="uid://dg3smpfuxyfob"
+import_script/path="uid://brpn5m7l1c0pt"
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={
+"materials": {
+"onion": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Onion/onion.tres",
+"use_external/path": "uid://dtoywj1bcsptq"
+},
+"onion-bottom": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Onion/onion-bottom.tres",
+"use_external/path": "uid://mf7xaus44dut"
+},
+"onion-dark": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Onion/onion-dark.tres",
+"use_external/path": "uid://bcvhjs8jti7p"
+}
+},
 "meshes": {
 "onion_Sphere": {
 "generate/lightmap_uv": 0,

@@ -13,6 +13,9 @@ public partial class GlbPostImport : EditorScenePostImport
         }
         
         Configure(node3D);
+        
+        GD.Print("GlbPostImport ran for " + GetSourceFile());
+        
         return node3D;
     }
 

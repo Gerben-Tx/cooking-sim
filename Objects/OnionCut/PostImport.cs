@@ -1,0 +1,45 @@
+using System;
+using System.IO;
+using CookingSim.ImportScripts;
+using Godot;
+
+namespace CookingSim.Objects.OnionCut;
+
+[Tool] // DONT FORGET THE TOOL
+public partial class PostImport : GlbPostImport {
+    private const string ModelName = "onion-cut-{0}-rigid";
+    
+    private const string MaterialPath0 = "onion.tres";
+    private const string MaterialPath1 = "onion-inside.tres";
+    
+    public override Node _PostImport(Node node) {
+        Node ret = base._PostImport(node);
+        if (ret is not Node3D node3D) {
+            return ret;
+        }
+        
+        Configure(node3D);
+        
+        return ret;
+    }
+    
+    private void Configure(Node3D node3D) {
+        for (int i = 1; i <= 6; i++) {
+            string modelName = string.Format(ModelName, i);
+            if (node3D.GetNode<RigidBody3D>(modelName) is not RigidBody3D rigidBody3D) {
+                throw new Exception("Could not find RigidBody3D");
+            }
+
+            if (rigidBody3D.GetNode<MeshInstance3D>(modelName) is not MeshInstance3D meshInstance3D) {
+                throw new Exception("Could not find MeshInstance3D");
+            }
+
+            // Set raw material
+            string cwd = GetSourceFile().Substring(
+                0,
+                GetSourceFile().Length - Path.GetFileName(GetSourceFile()).Length);
+            meshInstance3D.Mesh.SurfaceSetMaterial(0, GD.Load<BaseMaterial3D>(cwd + MaterialPath0));
+            meshInstance3D.Mesh.SurfaceSetMaterial(1, GD.Load<BaseMaterial3D>(cwd + MaterialPath1));
+        }
+    }
+}

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2mqeq1qevx7"
-path="res://.godot/imported/onion_cut.glb-3eaf207228f01914817e4de0122b65c2.scn"
+path="res://.godot/imported/onion_cut.glb-25ced2d710baad0852a5a4cd40666cff.scn"
 
 [deps]
 
-source_file="res://Objects/Onion/onion_cut.glb"
-dest_files=["res://.godot/imported/onion_cut.glb-3eaf207228f01914817e4de0122b65c2.scn"]
+source_file="res://Objects/OnionCut/onion_cut.glb"
+dest_files=["res://.godot/imported/onion_cut.glb-25ced2d710baad0852a5a4cd40666cff.scn"]
 
 [params]
 
@@ -33,11 +33,28 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
-import_script/path="uid://dg3smpfuxyfob"
+import_script/path="uid://dxfpt6mio24n4"
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={
+"materials": {
+"onion": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/OnionCut/onion.tres",
+"use_external/path": "uid://e1jklk3fvmh1"
+},
+"onion-dark": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/OnionCut/onion-dark.tres",
+"use_external/path": "uid://3jkrfcmy4lft"
+},
+"onion-inside": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/OnionCut/onion-inside.tres",
+"use_external/path": "uid://dgeoh4xt7xfrn"
+}
+},
 "meshes": {
 "onion_cut_Sphere_001": {
 "generate/lightmap_uv": 0,

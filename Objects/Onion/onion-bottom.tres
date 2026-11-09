@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://mf7xaus44dut"]
+
+[resource]
+resource_name = "onion-bottom"
+cull_mode = 2
+albedo_color = Color(0.38930836, 0.19873877, 0.023540802, 1)
+roughness = 0.5

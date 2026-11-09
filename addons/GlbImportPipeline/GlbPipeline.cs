@@ -1,10 +1,15 @@
+using System;
+using System.IO;
+using System.Runtime.InteropServices.JavaScript;
+using System.Runtime.Serialization;
 using Godot;
+using FileAccess = Godot.FileAccess;
 
 namespace CookingSim.Addons.GlbImportPipeline;
 
 [Tool]
 public partial class GlbPipeline : Node {
-    private const string ImportScriptPath = "res://ImportScripts/GlbPostImport.cs";
+    private const string FallbackImportScriptPath = "res://ImportScripts/GlbPostImport.cs";
 
     private readonly System.Collections.Generic.Dictionary<
         string,
@@ -25,12 +30,22 @@ public partial class GlbPipeline : Node {
         if (FileAccess.FileExists(importFilePath)) {
             config.Load(importFilePath);
         }
-
-        config.SetValue(
-            "params",
-            "import_script/path",
-            ImportScriptPath
-        );
+        
+        string importScriptPath =
+            glbPath.Substr(0, glbPath.Length - Path.GetFileName(glbPath).Length) + "PostImport.cs";
+        if (FileAccess.FileExists(importScriptPath)) {
+            config.SetValue(
+                "params",
+                "import_script/path",
+                importScriptPath
+            );
+        } else {
+            config.SetValue(
+                "params",
+                "import_script/path",
+                FallbackImportScriptPath
+            );
+        }
 
         Error saveError = config.Save(importFilePath);
         if (saveError != Error.Ok) {

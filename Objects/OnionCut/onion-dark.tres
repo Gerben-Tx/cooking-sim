@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://3jkrfcmy4lft"]
+
+[resource]
+resource_name = "onion-dark"
+cull_mode = 2
+albedo_color = Color(0.22783965, 0.041136738, 0.18037328, 1)
+roughness = 0.5

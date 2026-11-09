@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cfmio0w68incw"]
 
-[ext_resource type="PackedScene" uid="uid://c2mqeq1qevx7" path="res://Objects/Onion/onion_cut.glb" id="1_8ki6j"]
+[ext_resource type="PackedScene" uid="uid://c2mqeq1qevx7" path="res://Objects/OnionCut/onion_cut.glb" id="1_8ki6j"]
 [ext_resource type="PackedScene" uid="uid://d3j78hocg3fmy" path="res://Features/PickableObjectFeature/pickableObjectFeature.tscn" id="2_m35q8"]
 [ext_resource type="PackedScene" uid="uid://cie6xkfyqq5hl" path="res://Features/CookableObjectFeature/cookableObjectFeature.tscn" id="3_6j1lf"]
-[ext_resource type="Material" uid="uid://cnofmmmpbaw4a" path="res://Objects/Onion/cooked_material.tres" id="4_38hs8"]
-[ext_resource type="Material" uid="uid://dhohx8qqs8s6w" path="res://Objects/Onion/burned_material.tres" id="5_38hs8"]
+[ext_resource type="Material" uid="uid://cnofmmmpbaw4a" path="res://Objects/OnionCut/cooked_material.tres" id="4_38hs8"]
+[ext_resource type="Material" uid="uid://dhohx8qqs8s6w" path="res://Objects/OnionCut/burned_material.tres" id="5_38hs8"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_38hs8"]
 points = PackedVector3Array(0.04839524, 0.037009522, 0.00563368, 0.0491, -0.036726188, -0.007922363, 0.0491, -0.03539907, -0.014528471, 0.069448754, 0.0038362609, 0.001217381, 0.050359655, -0.005034918, 0.042572863, 0.050334424, 0.01095374, -0.041351072, 0.064645186, -0.019694101, -0.0074547958, 0.062134687, -0.018300083, 0.019721514, 0.059671428, 0.010406821, 0.030557137, 0.059671428, 0.027451366, -0.009064978, 0.06092599, -0.0035562473, -0.03013304, 0.04839524, -0.03910476, 0.00845052, 0.049805865, -0.017960249, -0.040875085, 0.04839524, 0.034185782, -0.021139545, 0.0491, 0.017448243, 0.038320392, 0.057095453, 0.0273098, 0.018039895, 0.06465611, 0.010163513, -0.02118, 0.0491, -0.01954348, 0.03699586, 0.064704634, -0.009853754, 0.02138619, 0.06702491, 0.009978283, 0.013474663, 0.06470448, -0.009853484, -0.021385532, 0.058417283, -0.02489161, -0.018823972, 0.0491, -0.0050080237, -0.042285714, 0.054533314, 0.020796908, -0.030840755, 0.06467471, 0.020215357, -0.0037377707, 0.068196096, -0.010788084, 0.0036395309, 0.062155332, -0.024659775, 0.0012380579, 0.050422817, -0.028790344, 0.0277479, 0.05047591, 0.026535844, 0.030214136, 0.068247914, -0.005944217, -0.0110233445, 0.05583982, -0.009993045, 0.035785705, 0.059671428, 0.027451415, 0.009064993)
@@ -24,15 +24,15 @@ points = PackedVector3Array(0.011515189, 0.04699351, 0.014056559, 0.0032, -0.045
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3va7v"]
 points = PackedVector3Array(0.033991978, 0.040269505, 0.009887319, 0.022699999, -0.044430766, -0.012887911, 0.022699999, -0.041204374, -0.022546275, 0.0433, -0.033617962, -0.015579978, 0.023856614, -0.0077331453, 0.0541972, 0.022699999, 0.023228081, -0.045102645, 0.042241465, -0.019084347, 0.03956942, 0.0433, 0.011557477, -0.038940184, 0.0433, 0.025575705, 0.029598057, 0.022699999, 0.03128539, 0.037048962, 0.023928946, -0.019444741, -0.05040742, 0.025666336, -0.04265655, 0.023343366, 0.024005547, 0.044033576, -0.01333266, 0.040550984, 0.031851962, -0.026240705, 0.04225527, -0.019113205, -0.039629657, 0.037334267, 0.012363043, 0.046633203, 0.04225318, -0.038924754, 0.0032999867, 0.022699999, -0.028307475, 0.041883186, 0.02727395, 0.0007064486, -0.053948447, 0.023481295, -0.048580952, -0.0140952375, 0.0433, 0.033369202, -0.0031140433, 0.027316729, 0.027479604, -0.043512534, 0.032349735, -0.035621542, -0.03136883, 0.023906708, 0.019243136, 0.050528705, 0.0433, -0.02894522, 0.02493187, 0.022699999, 0.044173617, 0.004824136, 0.029036188, 0.03213606, 0.03639372, 0.042265102, 0.004001824, 0.044634208, 0.0406254, 0.01063613, -0.04471865, 0.033995844, -0.035739403, 0.029822532, 0.04219842, -0.035403673, -0.01969082, 0.02396876, -0.0293969, 0.043502435)
 
-[node name="onion_cut" unique_id=927718007 instance=ExtResource("1_8ki6j")]
+[node name="onion_cut" unique_id=1731307826 instance=ExtResource("1_8ki6j")]
 
-[node name="onion-cut-1-rigid" parent="." index="0" unique_id=662660050]
+[node name="onion-cut-1-rigid" parent="." index="0" unique_id=647320873]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-1-rigid" index="1" unique_id=472412234]
 shape = SubResource("ConvexPolygonShape3D_38hs8")
 
-[node name="CollisionShape3D" parent="onion-cut-1-rigid" index="2" unique_id=2028357530]
+[node name="CollisionShape3D" parent="onion-cut-1-rigid" index="2" unique_id=1441150501]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-1-rigid" index="3" unique_id=402627910]
@@ -46,13 +46,13 @@ CookedMaterial = ExtResource("4_38hs8")
 BurnedMaterial = ExtResource("5_38hs8")
 SurfaceMaterialIndex = 1
 
-[node name="onion-cut-2-rigid" parent="." index="1" unique_id=1194347468]
+[node name="onion-cut-2-rigid" parent="." index="1" unique_id=918985752]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-2-rigid" index="1" unique_id=2033109309]
 shape = SubResource("ConvexPolygonShape3D_tvbju")
 
-[node name="CollisionShape3D" parent="onion-cut-2-rigid" index="2" unique_id=2059125707]
+[node name="CollisionShape3D" parent="onion-cut-2-rigid" index="2" unique_id=1796098164]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-2-rigid" index="3" unique_id=2131000450]
@@ -66,13 +66,13 @@ CookedMaterial = ExtResource("4_38hs8")
 BurnedMaterial = ExtResource("5_38hs8")
 SurfaceMaterialIndex = 1
 
-[node name="onion-cut-3-rigid" parent="." index="2" unique_id=1660631564]
+[node name="onion-cut-3-rigid" parent="." index="2" unique_id=1017075297]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-3-rigid" index="1" unique_id=644880547]
 shape = SubResource("ConvexPolygonShape3D_llwcm")
 
-[node name="CollisionShape3D" parent="onion-cut-3-rigid" index="2" unique_id=1198848456]
+[node name="CollisionShape3D" parent="onion-cut-3-rigid" index="2" unique_id=1963032089]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-3-rigid" index="3" unique_id=1034352198]
@@ -86,13 +86,13 @@ CookedMaterial = ExtResource("4_38hs8")
 BurnedMaterial = ExtResource("5_38hs8")
 SurfaceMaterialIndex = 1
 
-[node name="onion-cut-4-rigid" parent="." index="3" unique_id=1244617485]
+[node name="onion-cut-4-rigid" parent="." index="3" unique_id=1277989702]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-4-rigid" index="1" unique_id=315321221]
 shape = SubResource("ConvexPolygonShape3D_5c0d6")
 
-[node name="CollisionShape3D" parent="onion-cut-4-rigid" index="2" unique_id=555800979]
+[node name="CollisionShape3D" parent="onion-cut-4-rigid" index="2" unique_id=1511068616]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-4-rigid" index="3" unique_id=1375464686]
@@ -104,15 +104,15 @@ RigidBody = NodePath("../..")
 Mesh = NodePath("../../onion-cut-4-rigid")
 CookedMaterial = ExtResource("4_38hs8")
 BurnedMaterial = ExtResource("5_38hs8")
-SurfaceMaterialIndex = 1
+SurfaceMaterialIndex = 2
 
-[node name="onion-cut-5-rigid" parent="." index="4" unique_id=428939169]
+[node name="onion-cut-5-rigid" parent="." index="4" unique_id=1093323031]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-5-rigid" index="1" unique_id=1275149023]
 shape = SubResource("ConvexPolygonShape3D_cdx16")
 
-[node name="CollisionShape3D" parent="onion-cut-5-rigid" index="2" unique_id=431108981]
+[node name="CollisionShape3D" parent="onion-cut-5-rigid" index="2" unique_id=1586744217]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-5-rigid" index="3" unique_id=610100607]
@@ -124,15 +124,15 @@ RigidBody = NodePath("../..")
 Mesh = NodePath("../../onion-cut-5-rigid")
 CookedMaterial = ExtResource("4_38hs8")
 BurnedMaterial = ExtResource("5_38hs8")
-SurfaceMaterialIndex = 1
+SurfaceMaterialIndex = 2
 
-[node name="onion-cut-6-rigid" parent="." index="5" unique_id=601552601]
+[node name="onion-cut-6-rigid" parent="." index="5" unique_id=1555539502]
 collision_layer = 4
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="onion-cut-6-rigid" index="1" unique_id=1188385888]
 shape = SubResource("ConvexPolygonShape3D_3va7v")
 
-[node name="CollisionShape3D" parent="onion-cut-6-rigid" index="2" unique_id=664537595]
+[node name="CollisionShape3D" parent="onion-cut-6-rigid" index="2" unique_id=663769452]
 disabled = true
 
 [node name="Features" type="Node3D" parent="onion-cut-6-rigid" index="3" unique_id=940403366]

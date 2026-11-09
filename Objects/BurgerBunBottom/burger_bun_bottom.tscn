@@ -8,9 +8,9 @@
 height = 0.0064697266
 radius = 0.011230469
 
-[node name="burger_bun_bottom" unique_id=246179954 instance=ExtResource("1_64yk3")]
+[node name="burger_bun_bottom" unique_id=1450778578 instance=ExtResource("1_64yk3")]
 
-[node name="burger_bun_bottom-rigid" parent="." index="0" unique_id=1543302330]
+[node name="burger_bun_bottom-rigid" parent="." index="0" unique_id=1899391114]
 collision_layer = 5
 
 [node name="MergeArea1" type="Area3D" parent="burger_bun_bottom-rigid" index="2" unique_id=1637745372]
